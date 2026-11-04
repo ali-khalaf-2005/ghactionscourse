@@ -1,0 +1,12 @@
+name: First Workflow
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  example-iob:
+    runs-on: macos-latest
+    steps:
+      - name: print a welcome message
+      run: echo "Welcome to our first GitHub Action Workflow"
