@@ -9,4 +9,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: print a welcome message
-      run: echo "Welcome to our first GitHub Action Workflow"
+        run: echo "Welcome to our first GitHub Action Workflow"
