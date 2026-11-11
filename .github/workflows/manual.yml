@@ -1,17 +1,10 @@
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 
-        required: true
-        default: "staging"
-        type: choice
-        options:
-          - staging
-          - production
+  repository_dispatch:
+    types: [incident_repoet]
+
 jobs:
-  deploy:
+  handle-incident:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy appalication
-        run: echo "Deploy the application"
+      - name: Print incident details
+        run: echo "incident details"
