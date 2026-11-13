@@ -16,7 +16,7 @@ jobs:
           whoami 
 
       - name: checkout repo
-        uses: action/checkout@v6
+        uses: actions/checkout@v6
 
       - name: List Repository Files   
         run: |
