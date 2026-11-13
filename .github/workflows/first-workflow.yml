@@ -1,0 +1,26 @@
+name: First GitHub Actions Workflow
+
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Display Welcome Message
+        run: echo "Welcome to GitHub Actions"
+
+      - name: Display System Information
+        run: |
+          echo "Current User:"
+          whoami 
+
+      - name: checkout repo
+        uses: action/checkout@v6
+
+      - name: List Repository Files   
+        run: |
+          echo " repo files: "
+          ls -la
+      - name: Display Date
+        run: date            
